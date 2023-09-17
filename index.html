@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="curr_sco">
+        <br><br><span id="scoreA" class="">Player 1(X): 0</span>
+        <span id="scoreB" class="">Player 2(O): 0</span>
+        <table id="tab">
+            <caption>Score Table</caption>
+            <tr>
+                <th>Player 1</td>
+                <th>Player 2</td>
+            </tr>
+            
+        </table>
+    </div>
+
+    <div id="gameover" calss="gmor"></div>
+
+    <div id="main">
+        <div id="box">
+            <div id="R1">
+                <div class="sq" id="0_0" onclick="run(0,0)"></div>
+                <div class="sq" id="0_1" onclick="run(0,1)"></div>
+                <div class="sq" id="0_2" onclick="run(0,2)"></div>
+            </div>
+            <div id="R2">
+                <div class="sq" id="1_0" onclick="run(1,0)"></div>
+                <div class="sq" id="1_1" onclick="run(1,1)"></div>
+                <div class="sq" id="1_2" onclick="run(1,2)"></div>
+            </div>
+            <div id="R3">
+                <div class="sq" id="2_0" onclick="run(2,0)"></div>
+                <div class="sq" id="2_1" onclick="run(2,1)"></div>
+                <div class="sq" id="2_2" onclick="run(2,2)"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="btn">
+        <button onclick="restart()">Another Game</button>
+        <button onclick="location.reload()">End Game</button>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
